@@ -1,0 +1,504 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Ubuntu:wght@300&display=swap");
+
+:root {
+  --red: #ce0f2f;
+  --wine: #961212;
+  --red-top: #b80422;
+  --black: #232323;
+  --blue: #2aa9fc;
+  --green: #59a161;
+  --white: #fff;
+  --yellow: #fbeb58;
+  --primary-font: "Ubuntu", sans-serif;
+  --secundary-font: "Montserrat", sans-serif;
+}
+
+body {
+  background: linear-gradient(-270deg, #619ef8 60%, #fff 100%);
+}
+
+.container {
+  background-color: var(--bg-color);
+  display: flex;
+  margin: 1rem;
+}
+
+.ladoA {
+  background-color: var(--red);
+  height: 595px;
+  width: 415px;
+  box-shadow: -6px 6px 0 0 var(--black);
+  border-radius: 15px;
+}
+
+.topo {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--red-top);
+  height: 110px;
+  clip-path: polygon(100% 0, 100% 60%, 50% 60%, 40% 100%, 0 100%, 0 0);
+  border-radius: 15px;
+}
+
+.circulo-azul {
+  width: 50px;
+  height: 50px;
+  background-color: var(--blue);
+  border: 5px var(--white) solid;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 15px 0 0 15px;
+  cursor: pointer;
+  box-shadow: -4px 2px 0 0 var(--black);
+}
+
+.reflexo {
+  width: 8px;
+  height: 8px;
+  background-color: var(--white);
+  margin: 0.8rem;
+  border-radius: 50%;
+}
+
+.mini-circulos {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  margin-left: 15px;
+}
+
+.circulo-vermelho {
+  width: 15px;
+  height: 15px;
+  background-color: var(--white);
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  box-shadow: -2px 1px 0 0 var(--black);
+  -webkit-animation: piscar 1s linear infinite;
+  -moz-animation: piscar 1s linear infinite;
+  -ms-animation: piscar 1s linear infinite;
+  -o-animation: piscar 1s linear infinite;
+  animation: piscar 1s linear infinite;
+}
+
+.circulo-amarelo {
+  width: 15px;
+  height: 15px;
+  background-color: var(--yellow);
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  box-shadow: -2px 1px 0 0 var(--black);
+  -webkit-animation: piscar .9s linear infinite;
+  -moz-animation: piscar .9s linear infinite;
+  -ms-animation: piscar .9s linear infinite;
+  -o-animation: piscar .9s linear infinite;
+  animation: piscar .9s linear infinite;
+}
+
+.circulo-verde {
+  width: 15px;
+  height: 15px;
+  background-color: var(--green);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: -2px 1px 0 0 var(--black);
+  -webkit-animation: piscar .6s linear infinite;
+  -moz-animation: piscar .6s linear infinite;
+  -ms-animation: piscar .6s linear infinite;
+  -o-animation: piscar .6s linear infinite;
+  animation: piscar .6s linear infinite;
+}
+
+@keyframes piscar {
+  0% { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.display {
+  height: 325px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 40px 0 40px;
+}
+
+.mini-circulos-vermelhos {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.circulo-vermelho-display {
+  width: 15px;
+  height: 15px;
+  background-color: var(--wine);
+  border-radius: 50%;
+  margin-right: 25px;
+  cursor: pointer;
+  box-shadow: -2px 1px 0 0 var(--black);
+}
+
+.borda-tela {
+  display: flex;
+  flex-direction: column;
+  height: 260px;
+  width: 400px;
+  padding: 0 15px 25px 15px;
+  background-color: var(--white);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%, 0 85%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+.tela {
+  width: 270px;
+  height: 200px;
+  background-color: var(--black);
+  border-radius: 5px;
+}
+
+.pokemon-img {
+  position: absolute;
+  transform: translateX();
+  transform: translate(-160px, 50px);
+  height: 120px;
+  width: 110px;
+}
+
+.botoes {
+  background-color: var(--red);
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 15px;
+}
+
+.circulo-preto {
+  height: 40px;
+  width: 40px;
+  background-color: var(--black);
+  border-radius: 50%;
+  margin: 10px 0 0 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.circulo-preto:hover{
+  background-color: #131313;
+  transition: 0.5s;
+}
+
+.meio-botoes {
+  display: flex;
+  flex-direction: column;
+  margin: 0 60px 0 60px;
+}
+
+.listras {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+.listra-vermelho {
+  height: 5px;
+  width: 40px;
+  background-color: var(--red-top);
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: -4px 2px 0 0 var(--black);
+  transition: 0.5s;
+}
+
+.listra-vermelho:hover {
+  background-color: #640404;
+  transition: 0.5s;
+}
+
+.listra-azul {
+  height: 5px;
+  width: 40px;
+  background-color: var(--blue);
+  margin-left: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: -4px 2px 0 0 var(--black);
+  transition: 0.5s;
+}
+
+.listra-azul:hover {
+  background-color: #0166aa;
+  transition: 0.5s;
+}
+
+.mini-display {
+  margin-top: 15px;
+  height: 60px;
+  width: 108px;
+  background-color: var(--green);
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: -4px 2px 0 0 var(--black);
+  transition: 0.5s;
+}
+
+.mini-display:hover {
+  background-color: #34693a;
+  transition: 0.5s;
+}
+
+.d-pad {
+  margin-top: 15px;
+  clip-path: polygon(
+    0 34%,
+    36% 35%,
+    36% 0,
+    65% 0,
+    66% 35%,
+    100% 36%,
+    100% 65%,
+    66% 65%,
+    66% 100%,
+    37% 100%,
+    37% 64%,
+    0 64%
+  );
+  background-color: var(--black);
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.d-pad:hover{
+  background-color: #131313;
+  transition: 0.5s;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+}
+
+.numero {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  margin-right: 2px;
+  font-weight: bold;
+}
+
+.nome {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  margin-left: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.ladoB {
+  width: 0;
+  height: 0;
+}
+
+.rolamento-grupo {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(78px);
+}
+
+.mini-r {
+  width: 40px;
+  height: 60px;
+  background-color: var(--red);
+  border: 1px var(--black) solid;
+  border-radius: 7px;
+}
+
+.rolamento {
+  height: 391px;
+  width: 40px;
+  background-color: var(--red);
+  border: 1px var(--black) solid;
+}
+
+.tampa {
+  width: 391px;
+  height: 463px;
+  background-color: var(--red);
+  transform: translate(42px, -387px);
+  border-radius: 15px;
+  box-shadow: -3px 6px 0 0 var(--black);
+}
+
+.topo2 {
+  width: 391px;
+  height: 54px;
+  background-color: var(--red);
+  transform: translateY(-48px);
+  clip-path: polygon(0 0, 45% 0, 60% 100%, 0% 100%);
+}
+
+.pokedex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 32px;
+}
+
+input[type="search"] {
+  height: 70px;
+  width: 230px;
+  font-size: 28px;
+  font-family: var(--primary-font);
+  border-radius: 10px;
+  border: 3px solid var(--black);
+  transition: 0.5s;
+}
+
+input[type="search"]:hover {
+  border-color: var(--blue);
+  transition: 0.5s;
+}
+
+.teclado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  height: 100px;
+}
+
+.tecla {
+  height: 45px;
+  width: 55px;
+  border: var(--black) 1px solid;
+  background-color: var(--blue);
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: -2px 1px 0 0 var(--black);
+}
+
+.tecla:hover {
+  background-color: #0166aa;
+  transition: 0.5s;
+}
+
+.linha1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.linha2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.botoes-brancos {
+  display: flex;
+  flex-direction: row;
+  transform: translate(53px, 33px);
+}
+
+.botao-branco {
+  width: 50px;
+  height: 40px;
+  background-color: var(--white);
+  border: 1px var(--black) solid;
+  cursor: pointer;
+}
+
+.listras-pretas {
+  display: flex;
+  flex-direction: row;
+  transform: translate(220px, -30px);
+}
+
+.listra-preta {
+  height: 6px;
+  width: 45px;
+  border-radius: 5px;
+  margin-left: 15px;
+  background-color: var(--black);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.listra-preta:hover{
+  background-color: #131313;
+  transition: 0.5s;
+}
+
+.circulo-amarelo2 {
+  height: 35px;
+  width: 35px;
+  background-color: var(--yellow);
+  border-radius: 50%;
+  transform: translateX(300px);
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-animation: piscar 2s linear infinite;
+  -moz-animation: piscar 1s linear infinite;
+  -ms-animation: piscar 1s linear infinite;
+  -o-animation: piscar 2s linear infinite;
+  animation: piscar 1s linear infinite;
+  box-shadow: -3px 1px 0 0 var(--black);
+}
+
+.circulo-amarelo2:hover {
+  background-color: #a39300;
+  transition: 0.5s;
+}
+
+.visores {
+  display: flex;
+  transform: translate(31px, 40px);
+}
+
+.mini-visor {
+  margin: 0 20px 0 20px;
+  width: 125px;
+  height: 50px;
+  background-color: var(--black);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.mini-visor:hover{
+  background-color: #131313;
+  transition: 0.5s;
+}
+
+.form-p{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-procurar{
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: var(--white);
+  transition: 0.5s;
+  border: 3px solid var(--black);
+}
+
+.btn-procurar:hover{
+  background-color: #c4c4c4;
+  transition: 0.5s;
+}
+
+.btn-procurar:active{
+  transform: translateY(2px);
+}

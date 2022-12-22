@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/icon.svg" />
+    <title>Web Pokédex</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="ladoA">
+        <div class="topo">
+          <div class="circulo-azul">
+            <div class="reflexo"></div>
+          </div>
+          <div class="mini-circulos">
+            <div class="circulo-vermelho"></div>
+            <div class="circulo-amarelo"></div>
+            <div class="circulo-verde"></div>
+          </div>
+        </div>
+        <div class="display">
+          <div class="borda-tela">
+            <div class="mini-circulos-vermelhos">
+              <div class="circulo-vermelho-display"></div>
+              <div class="circulo-vermelho-display"></div>
+            </div>
+            <div class="imagens">
+              <img
+                src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2fb2821a-1406-4a1d-9b04-6668f278e944/d843fov-5ad2d436-789b-48f4-91ac-7a553ca26306.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJmYjI4MjFhLTE0MDYtNGExZC05YjA0LTY2NjhmMjc4ZTk0NFwvZDg0M2Zvdi01YWQyZDQzNi03ODliLTQ4ZjQtOTFhYy03YTU1M2NhMjYzMDYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.4WU23QrSu_7CD6c4MJIYPEeIvE5o8maEEkqYM40mwus"
+                alt="background pokemon"
+                class="tela"
+              />
+              <img src="" alt="pokémon" class="pokemon-img" id="pokemon" />
+            </div>
+            <div class="info">
+              <span id="numero-pokemon" class="numero"></span> -
+              <span id="nome-pokemon" class="nome">Carregando...</span>
+            </div>
+          </div>
+        </div>
+        <div class="botoes">
+          <div class="circulo-preto"></div>
+          <div class="meio-botoes">
+            <div class="listras">
+              <div class="listra-vermelho"></div>
+              <div class="listra-azul"></div>
+            </div>
+            <div class="mini-display"></div>
+          </div>
+          <div class="d-pad"></div>
+        </div>
+      </div>
+      <div class="ladoB">
+        <div class="rolamento-grupo">
+          <div class="mini-r"></div>
+          <div class="rolamento"></div>
+          <div class="mini-r"></div>
+        </div>
+        <div class="tampa">
+          <div class="topo2"></div>
+          <div class="display2">
+            <form id="pokedex" class="pokedex">
+              <div class="form-p">
+              <input
+                name="pesquisar"
+                type="search"
+                placeholder="Nome ou número..."
+                id="buscar"
+              />
+              <button id="procurar" class="btn-procurar"><img src="img/pesquisa.svg" alt="buscar"></button>
+            </div>
+            </form>
+          </div>
+          <div class="teclado">
+            <div class="linha1">
+              <div class="tecla"></div>
+              <div class="tecla"></div>
+              <div class="tecla"></div>
+              <div class="tecla"></div>
+              <div class="tecla"></div>
+            </div>
+            <div class="linha2">
+              <div class="tecla"></div>
+              <div class="tecla"></div>
+              <div class="tecla"></div>
+              <div class="tecla"></div>
+              <div class="tecla"></div>
+            </div>
+          </div>
+          <div class="botoes2">
+            <div class="botoes-brancos">
+              <div class="botao-branco"></div>
+              <div class="botao-branco"></div>
+            </div>
+            <div class="listras-pretas">
+              <div class="listra-preta"></div>
+              <div class="listra-preta"></div>
+            </div>
+            <div class="circulo-amarelo2"></div>
+            <div class="visores">
+              <div class="mini-visor"></div>
+              <div class="mini-visor"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
