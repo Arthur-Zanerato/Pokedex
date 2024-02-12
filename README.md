@@ -1,5 +1,5 @@
 # Pokedex
-Pokedex desenenhada com CSS;
+Pokedex criada com CSS;
 Foi utilizada a PokeAPI;
 Projeto que engloba vários efeitos, trazendo dinamismo.
 
